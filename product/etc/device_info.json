@@ -1,0 +1,13 @@
+{
+  "basic": {
+    "cpu": "MTK Helio G85",
+    "battery": "5000mAh Li-Poly",
+    "camera": "50MP+0.08MP",
+    "screen": "6.71″ IPS LCD",
+    "resolution": "720×1650, 60HZ"
+  },
+  "camera": {
+    "front_camera": "5MP",
+    "rear_camera": "50MP+0.08MP"
+  }
+}
