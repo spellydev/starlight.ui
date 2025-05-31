@@ -1,0 +1,170 @@
+# Low RAM patches to unlock full features
+ro.config.low_ram.threshold_gb=2
+ro.config.low_ram.middle.threshold_gb=2
+ro.miui.has_real_blur=1
+ro.miui.ui.blur=1
+persist.sys.background_blur_supported=true
+persist.sys.background_blur_status_default=false
+persist.sys.background_blur_version=2
+ro.vendor.audio.zoom.support=true
+persist.vendor.audio.zoom.scheme=true
+
+# POCO Phone fix
+ro.miui.product.home=com.miui.home
+
+# Thermal
+ro.thermal.iec.enable=true
+ro.config.thermal_throttle=true
+
+# WiFi tweaks
+net.dns1=8.8.8.8
+net.dns2=8.8.4.4
+
+# Refresh Rate tweaks
+ro.surface_flinger.enable_frame_rate_override=false
+ro.vendor.fps.switch.default=true
+persist.sys.screen_anti_burn_enabled=true
+
+# Fix lag issue on lowend
+persist.sys.miui_animator_sched.bigcores=2-7
+persist.sys.miui_animator_sched.bigcores=2-7
+persist.sys.miui_animator_sched.sched_threads=6
+persist.sys.spc.cpulimit.enabled=true
+persist.recenttasks.limit_maximum_number=true
+persist.sys.miui.sys_monitor=am.ActivityManagerService,wm.WindowManagerGlobalLock
+persist.sys.mms.compact_enable=true
+persist.sys.spc.enabled=true
+persist.sys.use_mi_new_strategy=true
+persist.sys.mmms.switch=true
+persist.sys.mms.bg_apps_limit=96
+persist.sys.mmms.lower.pre.previous.memavailable.thread=367000
+persist.sys.mmms.throttled.thread=15360
+persist.sys.miui_scout_enable=false
+persist.sys.reduce_died_count_delay=360000
+persist.sys.disable_restart_threshold=1
+persist.sys.full_scene_intercept_restart=true
+persist.sys.spc.proc_restart_enable=true
+persist.sys.use_boot_compact=true
+persist.sys.testTrimMemActivityBg.wk.enable=true
+persist.miui.dexopt.first_use=false
+persist.sys.memory_standard.enable=true
+
+
+# Anti POCO -- Changing it to Redmi
+ro.product.vendor.brand=Redmi
+ro.product.brand=Redmi
+
+## BAD PROPS REMOVED AGAIN
+
+
+# HOS 2 SHITS
+ro.control_privapp_permissions=
+ro.bluetooth.a2dp_offload.supported=false
+persist.bluetooth.a2dp_offload.disabled=true
+persist.sys.app_dexfile_preload.enable=false
+persist.sys.usap_pool_enabled=false
+persist.sys.dynamic_usap_enabled=false
+persist.sys.spc.proc_restart_enable=false
+persist.sys.preload.enable=false
+persist.sys.precache.enable=false
+persist.sys.prestart.proc=false
+persist.sys.prestart.feedback.enable=false
+persist.sys.performance.appLaunchPreload.enable=false
+persist.sys.smartcache.enable=false
+persist.sys.art_startup_class_preload.enable=false
+
+
+#help to free up unused ram
+persist.sys.purgeable_assets=1
+
+#Better signal.
+persist.cust.tel.eons=1
+
+# Net Speed Tweak
+net.tcp.buffersize.default=4096,87380,256960,4096,16384,256960
+net.tcp.buffersize.wifi=4096,87380,256960,4096,16384,256960
+net.tcp.buffersize.lte=524288,1048576,2097152,524288,1048576,2097152
+net.tcp.buffersize.hsdpa=6144,87380,1048576,6144,87380,1048576
+net.tcp.buffersize.hspa=6144,87380,524288,6144,16384,262144
+net.tcp.buffersize.umts=4096,87380,256960,4096,16384,256960
+net.tcp.buffersize.edge=4096,87380,256960,4096,16384,256960
+net.tcp.buffersize.gprs=4096,87380,256960,4096,16384,256960
+net.tcp.buffersize.evdo_b=6144,87380,1048576,6144,87380,1048576
+net.ipv4.tcp_ecn=0
+net.ipv4.route.flush=1
+net.ipv4.tcp_rfc1337=1
+net.ipv4.ip_no_pmtu_disc=0
+net.ipv4.tcp_sack=1
+net.ipv4.tcp_fack=1
+net.ipv4.tcp_window_scaling=1
+net.ipv4.tcp_timestamps=1
+net.ipv4.tcp_rmem=4096 39000 187000
+net.ipv4.tcp_wmem=4096 39000 187000
+net.ipv4.tcp_mem=187000 187000 187000
+net.ipv4.tcp_no_metrics_save=1
+net.ipv4.tcp_moderate_rcvbuf=1
+net.ipv6.tcp_ecn=0
+net.ipv6.route.flush=1
+net.ipv6.tcp_rfc1337=1
+net.ipv6.ip_no_pmtu_disc=0
+net.ipv6.tcp_sack=1
+net.ipv6.tcp_fack=1
+net.ipv6.tcp_window_scaling=1
+net.ipv6.tcp_timestamps=1
+net.ipv6.tcp_rmem=4096 39000 187000
+net.ipv6.tcp_wmem=4096 39000 187000
+net.ipv6.tcp_mem=187000 187000 187000
+net.ipv6.tcp_no_metrics_save=1
+net.ipv6.tcp_moderate_rcvbuf=1
+net.tethering.noprovisioning=true
+# IPV4 and IPV6 Support
+persist.telephony.support.ipv6=1
+persist.telephony.support.ipv4=1
+
+# 3G/4G Tweaks
+ro.ril.hsxpa=2
+ro.ril.hspa=2
+ro.ril.lte=2
+ro.ril.lte=2
+ro.ril.ltea=2
+ro.ril.hep=1
+ro.ril.enable.3g.prefix=1
+ro.ril.enable.4g.prefix=1
+ro.ril.enable.dtm=1
+ro.ril.hspaclass=15
+ro.ril.lteclass=15
+ro.ril.gprsclass=15
+ro.ril.hsupa.category=10
+ro.ril.hsdpa.category=30
+ro.ril.lte.category=10
+ro.ril.ltea.category=30
+ro.ril.enable.a51=1
+ro.ril.enable.a52=1
+ro.ril.enable.a53=1
+ro.ril.enable.a54=1
+ro.ril.enable.a55=1
+persist.cust.tel.eons=1
+
+# DNS Tweaks
+net.dns1=8.8.8.8
+net.dns2=8.8.4.4
+net.wcdma.dns1=8.8.8.8
+net.wcdma.dns2=8.8.4.4
+net.hspa.dns1=8.8.8.8
+net.hspa.dns2=8.8.4.4
+net.lte.dns1=8.8.8.8
+net.lte.dns2=8.8.4.4
+net.ltea.dns1=8.8.8.8
+net.ltea.dns2=8.8.4.4
+net.rmnet0.dns1=8.8.8.8
+net.rmnet0.dns2=8.8.4.4
+net.gprs.dns1=8.8.8.8
+net.gprs.dns2=8.8.4.4
+net.ppp0.dns1=8.8.8.8
+net.ppp0.dns2=8.8.4.4
+net.wlan0.dns1=8.8.8.8
+net.wlan0.dns2=8.8.4.4
+net.eth0.dns1=8.8.8.8
+net.eth0.dns2=8.8.4.4
+
+# END OF TWEAKS
