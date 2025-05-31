@@ -1,3 +1,6 @@
+# Maintainer prop
+ro.custom.build.name=Maintainer (@username)
+
 # Low RAM patches to unlock full features
 ro.config.low_ram.threshold_gb=2
 ro.config.low_ram.middle.threshold_gb=2
